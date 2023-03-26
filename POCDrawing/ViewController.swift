@@ -9,6 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let canvasView = CanvasView()
+
+    override func loadView() {
+        view = canvasView
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

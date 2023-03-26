@@ -13,6 +13,7 @@
 		B996F2E629CFFB4B00F3EC7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B996F2E529CFFB4B00F3EC7B /* Assets.xcassets */; };
 		B996F2E929CFFB4B00F3EC7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B996F2E729CFFB4B00F3EC7B /* LaunchScreen.storyboard */; };
 		B996F2F129CFFE0B00F3EC7B /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B996F2F029CFFE0B00F3EC7B /* CanvasView.swift */; };
+		B996F2F329D004F500F3EC7B /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B996F2F229D004F500F3EC7B /* ViewCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B996F2E829CFFB4B00F3EC7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B996F2EA29CFFB4B00F3EC7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B996F2F029CFFE0B00F3EC7B /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		B996F2F229D004F500F3EC7B /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		B996F2DB29CFFB4A00F3EC7B /* POCDrawing */ = {
 			isa = PBXGroup;
 			children = (
+				B996F2F229D004F500F3EC7B /* ViewCode.swift */,
 				B996F2DC29CFFB4A00F3EC7B /* AppDelegate.swift */,
 				B996F2DE29CFFB4A00F3EC7B /* SceneDelegate.swift */,
 				B996F2E029CFFB4A00F3EC7B /* ViewController.swift */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B996F2E129CFFB4A00F3EC7B /* ViewController.swift in Sources */,
+				B996F2F329D004F500F3EC7B /* ViewCode.swift in Sources */,
 				B996F2DD29CFFB4A00F3EC7B /* AppDelegate.swift in Sources */,
 				B996F2F129CFFE0B00F3EC7B /* CanvasView.swift in Sources */,
 				B996F2DF29CFFB4A00F3EC7B /* SceneDelegate.swift in Sources */,
