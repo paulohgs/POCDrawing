@@ -17,9 +17,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        drawView.didTapHandler = { [weak self] in
+            guard let image = self?.renderViewImage() else { return }
+            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        }
     }
 
-
+    func renderViewImage() -> UIImage {
+        let renderer = UIGraphicsImageRenderer(size: view.bounds.size)
+        let image = renderer.image { ctx in
+            view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+        }
+        return image
+    }
 }
 

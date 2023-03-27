@@ -9,6 +9,8 @@ import UIKit
 
 class DrawView: UIView {
 
+    var didTapHandler: (() -> Void)?
+
     private let canvasView: CanvasView = {
         let view  = CanvasView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -20,6 +22,7 @@ class DrawView: UIView {
         button.configuration = .bordered()
         button.setTitle("Render Image", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         return button
     }()
 
@@ -30,6 +33,10 @@ class DrawView: UIView {
 
     required init?(coder: NSCoder) {
         nil
+    }
+
+    @objc func didTapButton(_ sender: UIButton) {
+        didTapHandler?()
     }
 
 }
