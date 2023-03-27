@@ -63,29 +63,10 @@ class CanvasView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        buildLayout()
     }
 
     required init?(coder: NSCoder) {
         nil
     }
-
-}
-
-extension CanvasView: ViewCode {
-    func setupView() {
-        backgroundColor = .black
-    }
-
-    func setupHierarchy() {
-
-    }
-
-    func setupConstraints() {
-        NSLayoutConstraint.activate([
-
-        ])
-    }
-
 
 }

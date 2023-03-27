@@ -9,10 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let canvasView = CanvasView()
+    let drawView = DrawView()
 
     override func loadView() {
-        view = canvasView
+        view = drawView
     }
 
     override func viewDidLoad() {
